@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "772875930452",
+    "firebase_url": "https://fir-uxdribbble.firebaseio.com",
+    "project_id": "fir-uxdribbble",
+    "storage_bucket": "fir-uxdribbble.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772875930452:android:b9c53d19b41619d6d696c1",
+        "android_client_info": {
+          "package_name": "dev.saul1317.uxdribbble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772875930452-7coingrbnkku2laaf2k0rc230ellusak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.saul1317.uxdribbble",
+            "certificate_hash": "4f284dd6a828c93394139f6c28a14cffb0f06b6d"
+          }
+        },
+        {
+          "client_id": "772875930452-l999h1hiev4h033cfr5in9k48ch3f3tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMVGYl0USrNY7r42_gvWKPJ3V1K0v3Iys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772875930452-l999h1hiev4h033cfr5in9k48ch3f3tb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

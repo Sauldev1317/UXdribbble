@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UXdribbble</string>
+    <string name="login">Login</string>
+    <string name="correo_electr_nico_o_tel_fono">Correo electrónico o teléfono</string>
+    <string name="txtfiel_password">Contraseña</string>
+    <string name="sing_in">Sing in</string>
+    <string name="sing_up">Sign up</string>
+    <string name="resgister">Registro</string>
+    <string name="create_account">Create account</string>
+    <string name="phone">Teléfono</string>
+    <string name="usuario">Usuario</string>
+    <string name="request">Dato requerido</string>
+    <string name="incomplete_phone">Teléfono incompleto</string>
+    <string name="cerrar_sesión">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="txt_menu_cuenta">Cuenta</string>
+    <string name="txt_board">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat dolor in finibus vestibulum. Donec ullamcorper quam ante, in ullamcorper elit mollis id. Integer viverra magna nec purus venenatis, sed tristique ex sagittis. Donec eu hendrerit urna, et ultrices purus. Sed pellentesque commodo odio.</string>
+    <string name="txt_enter_comment">Enter your comments</string>
+</resources>

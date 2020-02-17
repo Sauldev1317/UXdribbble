@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  FONT SIZE  -->
+
+    <!--  Regular  -->
+    <dimen name="txt_headline_size">24sp</dimen>
+    <!--  Medium  -->
+    <dimen name="txt_title_size">20sp</dimen>
+    <!--  Regular  -->
+    <dimen name="txt_subheader_size">16sp</dimen>
+    <!--  Medium  -->
+    <dimen name="txt_body2_menu_size">14sp</dimen>
+    <!--  Regular  -->
+    <dimen name="txt_body1_size">16sp</dimen>
+    <!--  Regular  -->
+    <dimen name="txt_caption_size">12sp</dimen>
+    <!--  Medium  -->
+    <dimen name="txt_button_size">14sp</dimen>
+
+    <dimen name="component_space_bottom_medium">24dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="component_space_horizontal_high">40sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

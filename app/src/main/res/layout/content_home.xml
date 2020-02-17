@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/bottomNavigationView_home"
+    android:background="@color/primaryColor">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/joshua_fuller_ta7rn3ncwym_unsplash"
+        android:scaleType="centerCrop"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="-50dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="Charlotte Hill"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/txt_headline_size"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Houston, TX"
+                    android:textColor="@color/secondaryTextColor"
+                    android:textSize="@dimen/txt_subheader_size"
+                    android:fontFamily="@font/open_sans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/component_space_horizontal_high"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="339"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_bold"
+                            app:layout_columnSpan="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Followers"
+                            android:textColor="@color/secondaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_regular"
+                            app:layout_columnSpan="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/component_space_horizontal_high"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="48"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_bold"
+                            app:layout_columnSpan="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Followings"
+                            android:textColor="@color/secondaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_regular"
+                            app:layout_columnSpan="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10.7k"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_bold"
+                            app:layout_columnSpan="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Likes &amp; fav"
+                            android:textColor="@color/secondaryTextColor"
+                            android:textSize="@dimen/txt_body1_size"
+                            android:fontFamily="@font/open_sans_regular"
+                            app:layout_columnSpan="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                    android:background="@color/divider"/>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tablayout_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                    app:tabGravity="center"
+                    app:tabTextAppearance="@style/tab_text"
+                    app:tabIndicatorColor="@color/primaryColor"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabTextColor="@color/primaryTextColor">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Post"/>
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Board"/>
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:transitionName="profile_picture"
+            android:layout_gravity="center_horizontal"
+            android:elevation="5dp"
+            android:src="@drawable/elijah_o_donnell_xrtx9see4di_unsplash"/>
+
+    </FrameLayout>
+
+</FrameLayout>

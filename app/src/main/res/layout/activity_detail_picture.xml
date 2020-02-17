@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPicture">
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="detail_picture"
+        android:scaleType="fitStart"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-30dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="16dp">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:minHeight="400dp"
+            android:layout_marginBottom="30dp"
+            app:columnCount="3"
+            app:useDefaultMargins="true">
+
+            <TextView
+                android:id="@+id/txt_picture_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                android:textSize="@dimen/txt_title_size"
+                android:textColor="@color/primaryTextColor"
+                android:fontFamily="@font/open_sans_bold"
+                app:layout_columnSpan="3"/>
+
+            <TextView
+                android:id="@+id/txt_picture_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/component_space_bottom_medium"
+                android:textSize="@dimen/txt_body1_size"
+                android:textColor="@color/primaryTextColor"
+                android:fontFamily="@font/open_sans_regular"
+                app:layout_columnSpan="3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                app:layout_columnSpan="3"
+                app:layout_gravity="bottom"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:elevation="5dp"
+                android:src="@drawable/elijah_o_donnell_xrtx9see4di_unsplash"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="bottom"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/txt_enter_comment"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="@dimen/txt_body1_size"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="7"
+                app:layout_gravity="bottom"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Publicar"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/txt_button_size"
+                android:fontFamily="@font/open_sans_regular"
+                android:foreground="?attr/selectableItemBackground"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="2"
+                app:layout_gravity="bottom"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
